@@ -19,6 +19,9 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
+" language client
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " programming language
 " fish
 Plug 'dag/vim-fish'
