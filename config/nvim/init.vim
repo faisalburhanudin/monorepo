@@ -15,9 +15,6 @@ Plug 'vim-airline/vim-airline'
 " brackets, parantheses, etc closer
 Plug 'tpope/vim-surround'
 
-" intellisense
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 " git 
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
