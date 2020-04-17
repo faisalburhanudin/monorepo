@@ -12,6 +12,12 @@ Plug 'preservim/nerdtree'
 " tab
 Plug 'vim-airline/vim-airline'
 
+" brackets, parantheses, etc closer
+Plug 'tpope/vim-surround'
+
+" intellisense
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " git 
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -19,6 +25,8 @@ Plug 'airblade/vim-gitgutter'
 " programming language
 " fish
 Plug 'dag/vim-fish'
+" rust
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
