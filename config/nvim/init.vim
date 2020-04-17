@@ -1,4 +1,8 @@
 call plug#begin('~/.vim/plugged')
+" fuzzy search
+Plug 'junegunn/fzf'
+Plug 'ctrlpvim/ctrlp.vim'
+
 " theme
 Plug 'dracula/vim', { 'as': 'dracula' }
 
@@ -17,7 +21,6 @@ syntax on
 
 " theme configuration
 set termguicolors
-set background=dark
 colorscheme dracula
 
 " automatically when vim starts up if no files were specified
