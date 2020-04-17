@@ -15,6 +15,9 @@ Plug 'vim-airline/vim-airline'
 " brackets, parantheses, etc closer
 Plug 'tpope/vim-surround'
 
+" syntax check
+Plug 'scrooloose/syntastic'
+
 " git 
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -40,6 +43,17 @@ colorscheme dracula
 " automatically when vim starts up if no files were specified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" syntastic configuration
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 
 " keybinding
 " -----------------------------------------------------------
