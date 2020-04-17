@@ -15,9 +15,15 @@ Plug 'vim-airline/vim-airline'
 " git 
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+
+" programming language
+" fish
+Plug 'dag/vim-fish'
+
 call plug#end()
 
 syntax on
+filetype plugin indent on
 
 " theme configuration
 set termguicolors
