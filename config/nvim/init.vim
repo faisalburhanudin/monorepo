@@ -10,6 +10,7 @@ Plug 'vim-airline/vim-airline'
 
 " git 
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 syntax on
