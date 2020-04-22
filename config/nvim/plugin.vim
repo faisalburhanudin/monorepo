@@ -30,7 +30,11 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dag/vim-fish'
 " rust
 Plug 'rust-lang/rust.vim'
+" go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+" go test generator
+Plug 'buoto/gotests-vim'
 
 call plug#end()
 
