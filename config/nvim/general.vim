@@ -1,5 +1,3 @@
-source $HOME/.config/nvim/plugin.vim
-
 syntax on
 filetype plugin indent on
 
