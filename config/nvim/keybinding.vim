@@ -7,4 +7,7 @@ nmap <silent> <A-Right> :wincmd l<CR>
 " open nerdtree with ctrl+n
 map <C-n> :NERDTreeToggle<CR>
 
-
+" using tab for trigger ultisnip
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"

@@ -36,6 +36,9 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " go test generator
 Plug 'buoto/gotests-vim'
 
+" snippet
+Plug 'SirVer/ultisnips'
+
 call plug#end()
 
 
