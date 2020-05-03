@@ -9,8 +9,11 @@ Plug 'preservim/nerdtree'
 " git 
 Plug 'airblade/vim-gitgutter'
 
-" intellisense language client
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" intellisense
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
+" syntastic
+Plug 'vim-syntastic/syntastic'
 
 " programming language
 " fish
