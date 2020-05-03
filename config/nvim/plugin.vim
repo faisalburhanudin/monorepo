@@ -10,7 +10,7 @@ Plug 'preservim/nerdtree'
 Plug 'airblade/vim-gitgutter'
 
 " intellisense
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " syntastic
 Plug 'vim-syntastic/syntastic'
