@@ -1,28 +1,15 @@
 call plug#begin('~/.vim/plugged')
-" fuzzy search
-Plug 'junegunn/fzf'
-Plug 'ctrlpvim/ctrlp.vim'
-
-" theme
+" appereance
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'vim-airline/vim-airline'
 
 " for explore windows
 Plug 'preservim/nerdtree'
 
-" tab
-Plug 'vim-airline/vim-airline'
-
-" brackets, parantheses, etc closer
-Plug 'tpope/vim-surround'
-
-" syntax check
-Plug 'scrooloose/syntastic'
-
 " git 
-Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
-" language client
+" intellisense language client
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " programming language
@@ -32,13 +19,6 @@ Plug 'dag/vim-fish'
 Plug 'rust-lang/rust.vim'
 " go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-
-" go test generator
-Plug 'buoto/gotests-vim'
-
-" snippet
-Plug 'SirVer/ultisnips'
-
 call plug#end()
 
 

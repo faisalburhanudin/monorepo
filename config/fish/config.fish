@@ -1,4 +1,4 @@
-# open tmux
+# open tmux when in interactive and not in tmux session
 if status is-interactive
 and not set -q TMUX
     exec tmux
