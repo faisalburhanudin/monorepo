@@ -23,6 +23,8 @@ Plug 'dag/vim-fish'
 Plug 'rust-lang/rust.vim'
 " go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+" rust
+Plug 'rust-lang/rust.vim'
 call plug#end()
 
 
