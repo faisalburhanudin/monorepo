@@ -1,9 +1,0 @@
-version: "3"
-services:
-  transmission:
-    image: linuxserver/transmission:2.94-r3-ls53
-    container_name: transmission
-    volumes:
-       - ./transmission/download:/downloads/complete
-    ports:
-      - 9091:9091
