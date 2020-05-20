@@ -1,11 +1,51 @@
 version: "3"
 services:
 
+  plex:
+    image: linuxserver/plex:1.19.3.2831-181d9145d-ls96
+    container_name: plex
+    volumes:
+      - db-plex:/config
+
+  bazarr:
+    image: linuxserver/bazarr:v0.8.4.3-ls78
+    container_name: bazarr
+    volumes:
+      - ./media/tv:/tv
+      - ./media/movie:/movie
+      - db-bazarr:/config
+    ports:
+      - 6767:6767/tcp # Allows HTTP access to the internal webserver.
+
+  heimdall:
+    image: linuxserver/heimdall:2.2.2-ls86
+    container_name: heimdall
+    volumes:
+      - db-heimdall:/config
+    ports:
+      - 8080:80
+
+  jackett:
+    image: linuxserver/jackett:v0.16.511-ls65
+    container_name: jackett
+    volumes:
+      - db-jackett:/config
+    ports:
+      - 9117:9117
+
+  sonarr:
+    image: linuxserver/sonarr:2.0.0.5344-ls64
+    container_name: sonarr
+    volumes:
+      - db-sonarr:/config
+    ports:
+      - 8989:8989
+
   radarr:
     image: linuxserver/radarr:v0.2.0.1480-ls61
     container_name: radarr
     volumes:
-      - db-radar
+      - db-radarr:/config
     ports:
       - 7878:7878
       
@@ -20,4 +60,9 @@ services:
 
 volumes:
   db-data:
-  db-radar:
+  db-radarr:
+  db-sonarr:
+  db-jackett:
+  db-heimdall:
+  db-bazarr:
+  db-plex:
