@@ -20,7 +20,7 @@ set autoindent
 
 " theme configuration
 set termguicolors
-colorscheme dracula
+colorscheme nord
 
 " automatically open nerdtree when vim starts up if no files were specified
 autocmd StdinReadPre * let s:std_in=1

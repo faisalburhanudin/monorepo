@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 " appereance
+Plug 'arcticicestudio/nord-vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'vim-airline/vim-airline'
 
