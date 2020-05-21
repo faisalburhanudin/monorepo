@@ -8,11 +8,12 @@ services:
       - db-plex:/config
 
   bazarr:
-    image: linuxserver/bazarr:v0.8.4.3-ls78
+    image: linuxserver/bazarr
     container_name: bazarr
     volumes:
-      - ./media/tv:/tv
-      - ./media/movie:/movie
+      # - ./media/tv:/tv
+      - D:/Movies:/movie/movie_d
+      - E:/Movies:/movie/movie_e
       - db-bazarr:/config
     ports:
       - 6767:6767/tcp # Allows HTTP access to the internal webserver.
@@ -48,6 +49,7 @@ services:
       - db-radarr:/config
       - ./transmission/download:/downloads
       - D:/Movies:/movie/movie_d
+      - E:/Movies:/movie/movie_e
     ports:
       - 7878:7878
       
