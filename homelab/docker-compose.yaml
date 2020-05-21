@@ -46,6 +46,8 @@ services:
     container_name: radarr
     volumes:
       - db-radarr:/config
+      - ./transmission/download:/downloads
+      - D:/Movies:/movie/movie_d
     ports:
       - 7878:7878
       
@@ -53,10 +55,17 @@ services:
     image: linuxserver/transmission:2.94-r3-ls53
     container_name: transmission
     volumes:
-       - ./transmission/download:/downloads/complete
-       - db-data:/downloads
+       - ./transmission/download:/downloads
     ports:
       - 9091:9091
+      - 51413:51413
+      - 51413:51413/udp
+    environment: 
+      - USER=user
+      - PASS=user
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Jakarta
 
 volumes:
   db-data:
