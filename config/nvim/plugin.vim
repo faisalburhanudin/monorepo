@@ -1,11 +1,7 @@
 call plug#begin('~/.vim/plugged')
 " appereance
-Plug 'arcticicestudio/nord-vim'
-Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'vim-airline/vim-airline'
-
-" for explore windows
-Plug 'preservim/nerdtree'
+Plug 'altercation/vim-colors-solarized'
 
 " git 
 Plug 'airblade/vim-gitgutter'
