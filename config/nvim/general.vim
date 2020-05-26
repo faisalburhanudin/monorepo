@@ -20,7 +20,8 @@ set autoindent
 
 " theme configuration
 set termguicolors
-colorscheme solarized
+"set background=dark
+"colorscheme solarized
 
 " syntastic configuration
 set statusline+=%#warningmsg#
