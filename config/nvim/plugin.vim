@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 " appereance
 Plug 'vim-airline/vim-airline'
-Plug 'altercation/vim-colors-solarized'
 
 " git 
 Plug 'airblade/vim-gitgutter'

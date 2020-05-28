@@ -18,11 +18,6 @@ set tabstop=4 shiftwidth=4 expandtab
 " set auto indentation
 set autoindent
 
-" theme configuration
-set termguicolors
-"set background=dark
-"colorscheme solarized
-
 " syntastic configuration
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
