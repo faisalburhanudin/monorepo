@@ -179,3 +179,6 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# disable floating window for goland
+for_window [class="goland"] floating disable
