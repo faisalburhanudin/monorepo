@@ -30,3 +30,6 @@ let g:syntastic_check_on_wq = 0
 
 " show line number
 set number relativenumber
+
+" disable netrw history
+let g:netrw_dirhistmax = 0
