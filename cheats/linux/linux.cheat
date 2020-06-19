@@ -1,0 +1,9 @@
+% linux
+
+# brigtness
+xrandr --output <display> --brightness <value>
+
+$ display: xrandr | grep " connected" | cut -f1 -d " "
+
+# suspend
+dbus-send --system --print-reply --dest="org.freedesktop.login1" /org/freedesktop/login1 org.freedesktop.login1.Manager.Suspend boolean:true
