@@ -9,4 +9,5 @@ function fish_greeting
     fortune -a
 end
 
+zoxide init fish | source
 

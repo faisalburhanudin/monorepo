@@ -32,4 +32,5 @@ SET fish_pager_color_completion:\x1d
 SET fish_pager_color_description:B3A06D\x1eyellow
 SET fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SET fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SET fish_user_abbreviations:zi\x20z\x20\x2di\x1eza\x20zoxide\x20add\x1ezq\x20zoxide\x20query\x1ezqi\x20zoxide\x20query\x20\x2di\x1ezr\x20zoxide\x20remove\x1ezri\x20zoxide\x20remove\x20\x2di
 SET_EXPORT fish_user_paths:/home/faisal/\x2epyenv/bin\x1e/home/faisal/\x2efzf/bin
