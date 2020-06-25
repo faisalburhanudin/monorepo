@@ -11,6 +11,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " syntastic
 Plug 'vim-syntastic/syntastic'
 
+" fzf
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 " programming language
 " fish
 Plug 'dag/vim-fish'
