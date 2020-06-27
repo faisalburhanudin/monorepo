@@ -52,3 +52,5 @@ autocmd FocusGained,BufEnter,CursorHold,CursorHoldI *
 autocmd FileChangedShellPost *
   \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
 
+let g:go_highlight_operators = 1
+let g:go_fold_enable = []
