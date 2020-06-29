@@ -49,8 +49,13 @@ autocmd FocusGained,BufEnter,CursorHold,CursorHoldI *
 autocmd FileChangedShellPost *
   \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
 
+" vim-go configuration
 let g:go_autodetect_gopath = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_function_calls = 1
 let g:go_fold_enable = []
+
+" leader configuration
+let mapleader = " "
+nnoremap <leader>, :noh<CR>
 
