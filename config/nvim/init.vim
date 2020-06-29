@@ -58,4 +58,5 @@ let g:go_fold_enable = []
 " leader configuration
 let mapleader = " "
 nnoremap <leader>, :noh<CR>
+nnoremap <leader>gi :GoImplements<CR> 
 
