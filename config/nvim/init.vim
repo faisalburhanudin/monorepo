@@ -3,9 +3,6 @@ call plug#begin('~/.vim/plugged')
 " appereance
 Plug 'vim-airline/vim-airline'
 
-" git 
-Plug 'airblade/vim-gitgutter'
-
 " fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -52,5 +49,8 @@ autocmd FocusGained,BufEnter,CursorHold,CursorHoldI *
 autocmd FileChangedShellPost *
   \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
 
+let g:go_autodetect_gopath = 1
 let g:go_highlight_operators = 1
+let g:go_highlight_function_calls = 1
 let g:go_fold_enable = []
+
