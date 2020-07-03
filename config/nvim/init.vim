@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 " appereance
 Plug 'vim-airline/vim-airline'
+Plug 'preservim/nerdtree'
 
 " fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -18,6 +19,7 @@ Plug 'dag/vim-fish'
 Plug 'rust-lang/rust.vim'
 " go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'buoto/gotests-vim'
 " rust
 Plug 'rust-lang/rust.vim'
 call plug#end()
