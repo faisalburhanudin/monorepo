@@ -4,6 +4,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'preservim/nerdtree'
 
+" intellisense
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -39,6 +42,12 @@ let g:netrw_dirhistmax = 0
 " enable mouse support
 set mouse=a
 
+" add max long text
+set colorcolumn=120
+
+" disable wrap text
+set textwidth=0 
+set wrapmargin=0
 
 " Triger `autoread` when files changes on disk
 " https://unix.stackexchange.com/questions/149209/refresh-changed-content-of-file-opened-in-vim/383044#383044
