@@ -12,3 +12,5 @@ end
 zoxide init fish | source
 starship init fish | source
 
+source /home/faisal/workspace/src/github.com/faisalburhanudin/private/fish/init.fish
+
