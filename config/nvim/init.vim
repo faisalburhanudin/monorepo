@@ -6,6 +6,7 @@ Plug 'preservim/nerdtree'
 
 " intellisense
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'SirVer/ultisnips'
 
 " fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
